@@ -13,7 +13,7 @@ x,
 translate(x, '0123456789', '0000011111') as res
 from fakebin
 
--- regex_replace()
+-- regex_replace() with ranges
 select x,   regexp_replace(regexp_replace(x, '[0-4]', '0', 'g'), '[5-9]', '1', 'g')
 AS res from fakebin;
 
